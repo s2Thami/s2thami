@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #ffcbdb;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #9336B4;
+    --cor-quartenaria: #ff006a;
+    --cor-quintenaria: aqua;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* Height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+}
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link {
+    font-family: 'Black Ops One', cursive;
+    font-size: 2.6rem;
+    color: var(--cor-quartenaria);
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /*(espaço entre ícone e palavra)*/
+    background-color: var(--cor-secundaria);
+    border: 4px solid var(--cor-quartenaria);
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 16px 0;
+}
+/*Brincando com o conteúdo acima*/
+.titulo-destaque:hover {
+    color: var(--cor-quartenaria)
+}
+.apresentacao {
+    padding: 5% 10%;
+    display: flex;
+    gap: 82px;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo {
+    font-size: 2.5rem;
+    font-family: 'Anton', sans-serif;
+}
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.texto_convite_ubi {
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo {
+    font-family: 'Anton', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /*(espaço entre ícone e palavra)*/
+    background-color: var(--cor-secundaria);
+    border: 4px solid var(--cor-quartenaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 16px 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: 'Montserrat', sans-serif;
+}
+.botao_parceria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 8px solid white;
+    gap: 15px;
+    /*(espaço entre ícone e palavra)*/
+    background-color: var(--cor-secundaria);
+    width: 120px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 30px 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: 'Montserrat', sans-serif;
+}
+.tentar_alinhar_lado_do_outro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hover_cartao:hover {
+    color: var(--cor-quartenaria)}
+
+.texto_cosplays{
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    align-items: center;
+}
+.testando_vamola {
+    padding: 5% 10%;
+    gap: 600px;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.imagem_centralizada img{
+    display: block;
+    margin: 0 auto;
+}
+
+.imagem_centralizada{
+    text-align: center;
+}
+
+/*estilizando para quando passar o mouse, acontecer algo*/
+.apresentacao__links__navegacao:hover {
+    background-color: #272727
+}
+
+.apresentacao__imagem{
+    width: 50%
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-quintenaria);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+@media (max-width: 880px) {
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding:5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
